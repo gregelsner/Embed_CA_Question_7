@@ -20,6 +20,9 @@ void flip_2() { // flip 2 function toggles led2 on & off
 }
 int main() { //Runs in its own thread in the OS
 
+ led1=0;
+ led2=0;
+ 
  flipper_1.attach(&flip_1, 2000ms); // Calls flip_1 function for 2 sec. interval 
 
  flipper_2.attach(&flip_2, 5000ms); // Calls flip_2 function for 5 sec. interval
